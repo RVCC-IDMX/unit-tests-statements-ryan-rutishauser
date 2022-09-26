@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /*
  * stmnts-01.js
  * Language: javascript
@@ -13,7 +14,9 @@
  * @returns {integer} - the next integer as if you were counting up by 1
  */
 function nextInteger(int) {
-  // write your code here & return value
+  // eslint-disable-next-line no-param-reassign
+  ++int;
+  return int;
 }
 /**
  * Calculates the product of two numbers
@@ -22,7 +25,8 @@ function nextInteger(int) {
  * @returns {number} - The result of the multiplication
  */
 function times(a, b) {
-  // write your code here & return value
+  const number = a * b;
+  return number;
 }
 
 /**
@@ -31,7 +35,8 @@ function times(a, b) {
  * @returns {number} - the number of seconds
  */
 function convertMinutesToSeconds(minutes) {
-  // write your code here & return value
+  const number = minutes * 60;
+  return number;
 }
 
 /**
@@ -40,7 +45,9 @@ function convertMinutesToSeconds(minutes) {
  * @returns {number} - the number of seconds
  */
 function convertHoursToSeconds(hours) {
-  // write your code here & return value
+  const minutes = hours * 60;
+  const number = minutes * 60;
+  return number;
 }
 
 module.exports = {
